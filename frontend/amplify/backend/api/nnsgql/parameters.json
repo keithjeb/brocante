@@ -1,0 +1,4 @@
+{
+    "AppSyncApiName": "nnsgql",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST"
+}

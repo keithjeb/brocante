@@ -1,0 +1,44 @@
+type Seller @model {
+  id: ID!
+  name: String!
+  allocator: Allocator @connection(name: "AllocatorSellers")
+  items: [Item] @connection(name: "SellerItems")
+}
+
+type Allocator @model {
+  id: ID!
+  name: String!
+  sellers: [Seller] @connection(name: "AllocatorSellers")
+  location: String!
+  address: String!
+}
+
+type Item @model {
+  id: ID!
+  itemType: ItemType @connection(name: "TypeItems")
+  sex: TypeSex
+  description: String
+  price: Float
+  cart: Cart @connection(name: "ItemsCart")
+  seller: Seller @connection(name: "SellerItems")
+}
+
+type ItemType @model {
+  id: ID!
+  desc: String!
+  items: [Item] @connection(name: "TypeItems") 
+}
+
+enum TypeSex {
+  Boys
+  Girls
+  Unisex
+  NA
+}
+
+type Cart @model {
+  id: ID!
+  items: [Item] @connection(name: "ItemsCart")
+  friendlyName: String
+  completed: Boolean
+}
