@@ -43,3 +43,20 @@ type Cart @model {
   completed: Boolean
   scanner: String
 }
+
+type Content @model {
+  id: ID!
+  placement: PlacementOpts
+  content: String
+  createdAt: AWSDateTime
+  updatedAt: AWSDateTime
+  author: String
+}
+
+enum PlacementOpts {
+  BeforeLogin
+  AfterLogin
+  ItemInput
+  AllocatorDetails
+  PrivacyNotice
+}

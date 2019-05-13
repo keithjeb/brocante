@@ -1,0 +1,17 @@
+{
+    "projectName": "nearlynew",
+    "version": "2.0",
+    "frontend": "javascript",
+    "javascript": {
+        "framework": "vue",
+        "config": {
+            "SourceDir": "src",
+            "DistributionDir": "dist",
+            "BuildCommand": "quasar dev",
+            "StartCommand": "quasar build"
+        }
+    },
+    "providers": [
+        "awscloudformation"
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "nearlynew": {
+        "awscloudformation": {
+            "AuthRoleName": "nearlynew-nearlynew-20190512210007-authRole",
+            "UnauthRoleArn": "arn:aws:iam::119516967996:role/nearlynew-nearlynew-20190512210007-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::119516967996:role/nearlynew-nearlynew-20190512210007-authRole",
+            "Region": "eu-west-1",
+            "DeploymentBucketName": "nearlynew-nearlynew-20190512210007-deployment",
+            "UnauthRoleName": "nearlynew-nearlynew-20190512210007-unauthRole",
+            "StackName": "nearlynew-nearlynew-20190512210007",
+            "StackId": "arn:aws:cloudformation:eu-west-1:119516967996:stack/nearlynew-nearlynew-20190512210007/289e04b0-74e8-11e9-a702-02673541b8d0"
+        }
+    }
+}
